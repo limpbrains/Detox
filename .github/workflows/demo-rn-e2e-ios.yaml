@@ -26,7 +26,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'npm' # cache packages, but not node_modules
+          # cache: 'npm' # cache packages, but not node_modules
 
       - name: Install Dependencies
         run: npm install
