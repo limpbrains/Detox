@@ -18,7 +18,7 @@ export const HelloWorld = () => {
   const size = 256;
   const r = size * 0.33;
   return (
-    <Canvas style={{ flex: 1 }}>
+    <Canvas style={{ height: size, width: size }}>
       <Group blendMode="multiply">
         <Circle cx={r} cy={r} r={r} color="cyan" />
         <Circle cx={size - r} cy={r} r={r} color="magenta" />
@@ -43,7 +43,7 @@ class example extends Component {
   render() {
     if (this.state.greeting) return this.renderAfterButton();
     return (
-      <View testID='welcome' style={{flex: 1, paddingTop: 20, justifyContent: 'center', alignItems: 'center'}}>
+      <View testID='welcome' style={{flex: 1, paddingTop: 20, justifyContent: 'center', alignItems: 'center' }}>
         <Text style={{fontSize: 25, marginBottom: 30}}>
           Welcome
         </Text>
